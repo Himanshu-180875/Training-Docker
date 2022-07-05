@@ -1,5 +1,5 @@
-// const db = require('../config/database')
-const db = require("database");
+const db = require('../config/database')
+// const db = require("database");
 const logger = require("../config/logger")
 
   

@@ -4,8 +4,8 @@ const dotenv = require("dotenv").config();
 const session = require("express-session");
 const MySQLStore = require("express-mysql-session")(session);
 const app = express();
-// const db = require("./config/database");
-const db = require("database");
+const db = require("./config/database");
+// const db = require("database");
 
 const allRoutes = require("./Routes/index");
 const logger = require("./config/logger");

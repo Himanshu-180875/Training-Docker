@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-// const db = require("../config/database");
-const db = require("database");
+const db = require("../config/database");
+// const db = require("database");
 const logger = require("../config/logger");
 const {savingRequestLogs, savingResponseLogs}  = require("./savingLogs");
 const registerResponse =  require('../Responses/registerResponses');

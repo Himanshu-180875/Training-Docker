@@ -8,7 +8,7 @@ const authenticateUser = require("./controllers/auth");
 const verifyToken = require("./controllers/authVerify");
 
 // Creating a new websocket server
-const wss = new WebSocketServer.Server({ port: 8080 });
+const wss = new WebSocketServer.Server({ port: process.env.WEBSOCKET_APP_PORT });
 
 // Creating connection using websocket
 wss.on("connection", (ws, req) => {
@@ -75,7 +75,7 @@ wss.on("connection", (ws, req) => {
 
 //This gives info in the console about server running status
 logger.info(
-  "The WebSocket server is running on port 8080" +
+  `The WebSocket server is running on port ${process.env.WEBSOCKET_APP_PORT}` +
     " " +
     path.basename(__filename)
 );

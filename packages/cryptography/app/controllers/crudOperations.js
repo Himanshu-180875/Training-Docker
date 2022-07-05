@@ -1,5 +1,5 @@
-// const db = require('../config/database')
-const db = require("database");
+const db = require('../config/database')
+// const db = require("database");
 
 const index = require('../index')
 // const db = require("../config/knex_database");
